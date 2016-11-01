@@ -20,7 +20,7 @@ Esta base foi criada com informações do [Instituto Brasileiro de Geografia e E
 - Consulta por Município (http://www.ibge.gov.br/home/geociencias/areaterritorial/area.shtm)
 - GeoFTP (ftp://geoftp.ibge.gov.br/)
 
-## Última atualização
+## Última atualização de dados
 05/02/2016
 
 ## Licença
