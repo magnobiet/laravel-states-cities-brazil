@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model
 {
 
+    use SoftDeletes;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -33,6 +35,15 @@ class City extends Model
      */
     protected $casts = [
         'state_id' => 'integer',
+    ];
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = [
+        'deleted_at'
     ];
 
     /**

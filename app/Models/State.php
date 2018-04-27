@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class State extends Model
 {
 
+    use SoftDeletes;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -25,6 +27,16 @@ class State extends Model
     protected $hidden = [
         'created_at',
         'updated_at',
+    ];
+
+
+    /**
+     * The attributes that should be mutated to dates.
+     *
+     * @var array
+     */
+    protected $dates = [
+        'deleted_at'
     ];
 
     /**

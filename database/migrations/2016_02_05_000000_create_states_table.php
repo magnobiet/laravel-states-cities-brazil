@@ -20,6 +20,7 @@ class CreateStatesTable extends Migration
             $table->string('name', 64)->unique();
             $table->string('abbr', 2)->unique();
             $table->timestamps();
+            $table->softDeletes();
 
         });
 
